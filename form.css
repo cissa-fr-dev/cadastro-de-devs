@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-position:center;
+    background-size: cover;
+    background-image: url('https://i.stack.imgur.com/SvWWN.png');   
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.content {   
+    height: 80%;
+    color: #cdc0f7; 
+    background:rgba(0, 0, 0, 0.5);
+    padding: 25px; 
+    border-radius: 5px;  
+    box-shadow: 0 0 5em 3em rgb(0 0 0 / 35%);
+        
+    overflow-x: auto;
+    overflow-y: auto; 
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: 6px;    
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000083;
+    border-radius: 5px;
+}
+
+#content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-name {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content-email {   
+   display: flex;
+   flex-direction: column;
+}
+
+#email {
+    flex: 1;
+}
+
+fieldset {
+    border: none;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.group:before,
+.group:after {
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.field{
+    margin-bottom: 1em;
+}
+
+.field label{
+    margin-bottom: 0.3em;
+    color: #d2c9ec;
+    display: block;
+}
+
+.field input[type="text"], 
+.field select,
+.field textarea {
+    padding: 0.6em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.664);
+   
+}
+
+.field input[type="email"]
+{
+    padding: 0.6em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    background: #E0E0F8;
+}
+
+#content-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience{
+   flex: 1;
+   min-height: 6rem;
+}
+
+#content-button {
+    display: flex;
+    justify-content: center;    
+}
+
+.button {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.5em;    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover{
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.button, 
+select {
+    cursor: pointer;
+}
+
+#check {
+    display: inline-block;
+} 
